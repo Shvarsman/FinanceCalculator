@@ -40,7 +40,7 @@ jobs:
       - name: Make gradlew executable
         run: chmod +x ./gradlew
       - name: Build Desktop
-        run: ./gradlew :composeApp:desktopJar
+        run: ./gradlew :composeApp:jvmJar
 
   web:
     runs-on: ubuntu-latest
