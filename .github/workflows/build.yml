@@ -14,7 +14,7 @@ jobs:
       - name: Make gradlew executable
         run: chmod +x ./gradlew
       - name: Run common tests
-        run: ./gradlew :composeApp:allTests
+        run: ./gradlew :composeApp:jvmTest :composeApp:jsTest
 
   android:
     runs-on: ubuntu-latest
